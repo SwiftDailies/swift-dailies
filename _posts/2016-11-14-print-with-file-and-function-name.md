@@ -33,5 +33,5 @@ func log(message: String = "", file: String = #file, line: Int = #line, function
 When called with no parameters from the app delegate, this will print out:
 
 ```
-`AppDelegate.swift:48 - application(_:didFinishLaunchingWithOptions:)
+AppDelegate.swift:48 - application(_:didFinishLaunchingWithOptions:)
 ````
