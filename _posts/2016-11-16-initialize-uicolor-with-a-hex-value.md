@@ -11,6 +11,19 @@ permalink: /initialize-uicolor-with-a-hex-value/
 Sometimes it's useful to initialize an `UIColor` object with a hexadecimal `Int` value.
 
 ```swift
-`extension UIColor 
+extension UIColor 
 convenience init(hex: Int, alpha: CGFloat = 1.0) 
-let red = CGFloat((hex & 0xFF0000) \>\> 16
+let red = CGFloat((hex & 0xFF0000) \>\> 16) / 255.0
+let green = CGFloat((hex & 0xFF00) \>\> 8) / 255.0
+let blue = CGFloat((hex & 0xFF)) / 255.0
+
+self.init(red:red, green:green, blue:blue, alpha:alpha)
+}
+}
+```
+
+Use it like this:
+
+```swift
+let fancyBlue = UIColor(hex: 0x00A4F8)
+````
