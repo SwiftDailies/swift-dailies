@@ -9,9 +9,14 @@
 		<div class="start">
 			{{ content }}
 		</div>
+		<hr>
 		<div class="post-navigation">
-			<a href="">Letzter</a>
-			<a href="">Nächster</a>
+			{% if page.previous %}
+			<a class="previous-post" href="{{ page.previous.url | prepend: site.baseurl }}"><span class="normal-text">←︎ </span>{{ page.previous.title }}</a>
+			{% endif %}
+			{% if page.next %}
+			<a class="next-post" href="{{ page.next.url | prepend: site.baseurl }}"><span class="normal-text">→ </span>{{ page.next.title }}</a>
+			{% endif %}
 		</div>
 		{% include footer.html %}
 	</main>

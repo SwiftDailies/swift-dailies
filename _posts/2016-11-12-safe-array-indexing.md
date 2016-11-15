@@ -3,6 +3,7 @@ layout: post
 title: Safe array indexing
 date: 2016-11-12
 published: true
+permalink: /safe-array-indexing/
 number: 2
 ---
 

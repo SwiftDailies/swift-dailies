@@ -1,13 +1,13 @@
 <aside>
 	<div >
 		<nav>			
+			<h1>Swift<span class="headline-highlight">Dailies</span></h1>
 			<ul>
 				<li><a href="/"><img src="/img/icon-home.svg" alt=""></a></li>
 				{% for page in site.pages %} {% if page.title %} {% unless page.include == false %}
 				<!-- <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li> -->
 				{% endunless %} {% endif %} {% endfor %}
 			</ul>
-			<h1>Swift<span class="headline-highlight">Dailies</span></h1>
 			<!-- <div class="language-selector">
 				<a href="/">🇩🇪</a>
 				<a href="/">🇬🇧</a>

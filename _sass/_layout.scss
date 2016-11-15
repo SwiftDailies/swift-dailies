@@ -98,6 +98,7 @@ time {
 
 				&:hover {
 					text-decoration: underline;
+					text-decoration-color: $accent-color;
 				}
 			}
 		}	
@@ -107,9 +108,34 @@ time {
 		height: 30px;
 	}
 	
+	hr {
+		width: 20%;
+		border: 0.5px solid $secondary-color;
+		height: 0px;
+		margin: 40px 0 40px 0;
+	}
+
 	.post-navigation {
 		position: relative;
+		margin-bottom: 40px;
+		min-height: 40px;
+
+		a {
+			color: $accent-color;
+			font-weight: bold;
+			text-decoration: none;
+
+			.normal-text {
+				color: $primary-color;
+				font-weight: normal;
+				font-size: 1.2em;
+			}
+		}
 		
+		.next-post {
+			right: 0;
+			position: absolute;			
+		}
 	}
 	
 }
@@ -127,7 +153,7 @@ code {
 	text-transform: none;
 	background: $background-color-code;
 	padding: 5px;
-	font-weight: bold;
+	
 }
 
 p {

@@ -16,7 +16,7 @@
 	        <h2>{{ post.date | date: '%B %Y' }}</h2>
 	      		{% endif %}
 	    		{% endunless %}
-	    	<li>#{{ post.number }}<a href="{{ post.url }}"><span class="post-title">{{ post.title }}</span></a><span class="post-date">{{ post.date | date: '%d %B %Y' }}</span></li>
+	    	<li>#{{ post.number }}<a href="{{ post.url }}"><span class="post-title">{{ post.title }}</span></a><span class="post-date">{{ post.date | date: '%d. %B %Y' }}</span></li>
 	  		{% endfor %}
 		</ul>
 		{% include footer.html %}
