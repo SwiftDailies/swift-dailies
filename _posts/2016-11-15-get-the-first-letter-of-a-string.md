@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2016-11-15
-title: First letter of a string
+title: Get the first letter of a string
 published: true
 permalink: /first-letter-of-a-string/
 ---
