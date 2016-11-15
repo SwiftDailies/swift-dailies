@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-15T01:28:04+01:00</updated><id>http://localhost:4000//</id><title type="html">Swift Dailies</title><subtitle>Daily snippets of useful Swift code.</subtitle><entry><title type="html">Test Post</title><link href="http://localhost:4000/2016/11/13/test.html" rel="alternate" type="text/html" title="Test Post" /><published>2016-11-13T00:00:00+01:00</published><updated>2016-11-13T00:00:00+01:00</updated><id>http://localhost:4000/2016/11/13/test</id><content type="html" xml:base="http://localhost:4000/2016/11/13/test.html">&lt;h1 id=&quot;test&quot;&gt;Test&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto error illo quis quia saepe totam maiores possimus, labore consequatur, exercitationem, a unde fugiat amet, impedit molestias! Excepturi molestias velit nam.&lt;/p&gt;</content><summary type="html">Test</summary></entry><entry><title type="html">Safe array indexing</title><link href="http://localhost:4000/2016/11/12/safe-array-indexing.html" rel="alternate" type="text/html" title="Safe array indexing" /><published>2016-11-12T00:00:00+01:00</published><updated>2016-11-12T00:00:00+01:00</updated><id>http://localhost:4000/2016/11/12/safe-array-indexing</id><content type="html" xml:base="http://localhost:4000/2016/11/12/safe-array-indexing.html">&lt;h1 id=&quot;safe-array-indexing&quot;&gt;Safe array indexing&lt;/h1&gt;
+
+&lt;p&gt;Returns &lt;code class=&quot;highlighter-rouge&quot;&gt;nil&lt;/code&gt; if the index exceeds  the array’s bounds.&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;extension&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Array&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nf&quot;&gt;subscript&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;safe&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;kt&quot;&gt;Element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Via &lt;a href=&quot;http://ericasadun.com/2015/06/01/swift-safe-array-indexing-my-favorite-thing-of-the-new-week/&quot;&gt;Erica Sadun&lt;/a&gt;.&lt;/p&gt;</content><summary type="html">Safe array indexing</summary></entry><entry><title type="html">Random Int</title><link href="http://localhost:4000/2016/11/11/random-int.html" rel="alternate" type="text/html" title="Random Int" /><published>2016-11-11T00:00:00+01:00</published><updated>2016-11-11T00:00:00+01:00</updated><id>http://localhost:4000/2016/11/11/random-int</id><content type="html" xml:base="http://localhost:4000/2016/11/11/random-int.html">&lt;h1 id=&quot;random-int&quot;&gt;Random Int&lt;/h1&gt;
+
+&lt;p&gt;Initialize a random Int via &lt;code class=&quot;highlighter-rouge&quot;&gt;Int(2...10)&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;Int(2..&amp;lt;10)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;extension Int \{
+'' init(_ range: ClosedRange&amp;lt;Int&amp;gt;) {
+''     self = Int(arc4random_uniform(UInt32(range.upperBound + 1)) + UInt32(range.lowerBound))
+'' }
+'' init(_ range: Range&amp;lt;Int&amp;gt;) {
+''     self = Int(arc4random_uniform(UInt32(range.upperBound) + UInt32(range.lowerBound)))
+'' }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><summary type="html">Random Int</summary></entry></feed>

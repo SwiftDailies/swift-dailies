@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+	{% include header.html %}
+	<main class="container">
+		<p class="post-date">{{ page.date | date: '%d. %B %Y' }}</p>
+		<div class="start">
+			{{ content }}
+		</div>
+		{% include footer.html %}
+	</main>
+</body>
+
+</html>

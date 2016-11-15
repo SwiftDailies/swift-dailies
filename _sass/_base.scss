@@ -1,0 +1,44 @@
+// Colors
+
+$primary-color: #262626;
+$secondary-color: #aaa;
+$accent-color: #4A90E2;
+$background-color: #fafafa;
+$background-color-code: #eee;
+
+
+$icon-color: $secondary-color;
+$icon-hover-color: $accent-color;
+
+$link-color: $primary-color;
+$link-hover-color: $accent-color;
+
+
+// Fonts
+$font-style: 'Source Sans Pro', sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+$font-size-title: 3em;
+$font-size-title-mobile: 2.5em;
+
+
+// Dimensions
+$content-width: 800px;
+$navbar-padding: 36px;
+$navbar-height: 55px;
+$social-icon-padding: 30px;
+$social-icon-padding-mobile: 20px;
+
+
+
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
