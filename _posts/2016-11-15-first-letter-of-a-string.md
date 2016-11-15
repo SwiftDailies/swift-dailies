@@ -10,7 +10,7 @@ permalink: /first-letter-of-a-string/
 
 This snippet will give you the first letter of a string.
 
-~~ ```swift
+```swift
 extension String {
 	var firstLetter: String {
 		guard self != "" else {
@@ -19,7 +19,7 @@ extension String {
 		return String(self[self.startIndex])
 	}	
 }
-~~ ```
+```
 
 This is empty for an empty string.
 
