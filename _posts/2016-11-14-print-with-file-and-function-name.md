@@ -2,6 +2,7 @@
 layout: post
 date: 2016-11-14
 title: Print with file and function name
+permalink: /print-with-file-and-function-name/
 published: true
 ---
 
