@@ -2,7 +2,7 @@
 layout: post
 date: 2016-11-16
 title: Initialize UIColor with a hex value
-published: false
+published: true
 permalink: /initialize-uicolor-with-a-hex-value/
 --- 
 
