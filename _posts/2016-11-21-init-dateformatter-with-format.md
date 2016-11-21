@@ -24,4 +24,5 @@ Use it like this.
 ```
 let format = "YYYY-MM-dd"
 let formatter = DateFormatter(with: format)
-let dateString = formatter.string(from: Date()
+let dateString = formatter.string(from: Date())
+```
