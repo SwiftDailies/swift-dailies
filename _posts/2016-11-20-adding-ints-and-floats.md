@@ -8,7 +8,7 @@ permalink: /adding-floats-to-ints-without-hassle/
 
 # Adding Floats to Ints without hassle
 
-This extension lets you add `Float`s, `Double`s and `CGFloat`s to an `Int` without the need to cast them beforehand.
+This extension lets you add `Float`, `Double` and `CGFloat` to an `Int` without the need to cast them beforehand.
 
 ```swift
 extension Int {
