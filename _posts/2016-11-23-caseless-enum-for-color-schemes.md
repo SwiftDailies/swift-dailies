@@ -2,7 +2,7 @@
 layout: post
 date: 2016-11-23
 title: Caseless enum for color schemes
-published: false
+published: true
 permalink: /caseless-enum-for-color-schemes/
 ---
 
