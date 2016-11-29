@@ -2,7 +2,7 @@
 layout: post
 date: 2016-11-29
 title: DateComponentsFormatter
-published: false
+published: true
 permalink: /datecomponentsformatter/
 ---
 
