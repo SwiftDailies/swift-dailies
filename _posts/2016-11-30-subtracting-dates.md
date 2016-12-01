@@ -2,7 +2,7 @@
 layout: post
 date: 2016-11-30
 title: Subtracting dates
-published: false
+published: true
 permalink: /subtracting-dates/
 ---
 
