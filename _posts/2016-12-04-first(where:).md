@@ -3,7 +3,7 @@ layout: post
 date: 2016-12-04
 title: first(where:)
 published: true
-permalink: /first(where:)/
+permalink: /first-where/
 ---
 
 # first(where:)
